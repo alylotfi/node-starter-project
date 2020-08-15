@@ -1,0 +1,82 @@
+{
+	"development": {
+		"sequelize": {
+			"username": "root",
+			"password": "123456",
+			"database": "sup",
+			"host": "127.0.0.1",
+			"dialect": "mysql",
+			"port": 3306,
+			"pool": {
+				"max": 10,
+				"min": 0,
+				"acquire": 30000,
+				"idle": 10000
+			},
+			"define": {
+				"underscored": false,
+				"syncOnAssociation": true,
+				"charset": "utf8mb4",
+				"collate": "utf8mb4_general_ci",
+				"timestamps": false
+			}
+		},
+		"mongoose": {
+			"connectionLimit": 50,
+			"host": "localhost",
+			"port": 27017,
+			"user": "admin",
+			"password": "123456",
+			"database": "cabin",
+			"connectTimeout": 90,
+			"debug": false
+		},
+		"workers": {
+			"active": false,
+			"workerNum": 1
+		},
+		"port": 2030
+	},
+	"production": {
+		"sequelize": {
+			"username": "root",
+			"password": "123456",
+			"database": "sup",
+			"host": "127.0.0.1",
+			"dialect": "mysql",
+			"port": 2218,
+			"pool": {
+				"max": 10,
+				"min": 0,
+				"acquire": 30000,
+				"idle": 10000
+			},
+			"define": {
+				"underscored": false,
+				"syncOnAssociation": true,
+				"charset": "utf8mb4",
+				"collate": "utf8mb4_general_ci",
+				"timestamps": false
+			},
+			"dialectOptions": {
+				"useUTC": false
+			},
+			"timezone": "Asia/Tehran"
+		},
+		"mongoose": {
+			"connectionLimit": 50,
+			"host": "localhost",
+			"port": 27017,
+			"user": "admin",
+			"password": "123456",
+			"database": "cabin",
+			"connectTimeout": 90,
+			"debug": false
+		},
+		"workers": {
+			"active": false,
+			"workerNum": 1
+		},
+		"port": 2030
+	}
+}
